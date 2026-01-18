@@ -1,0 +1,39 @@
+\usepackage[utf8]{inputenc}
+\usepackage[norsk]{babel}
+\usepackage[margin=2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage[htt]{hyphenat}
+\usepackage{tikz}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Section formatting
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}
+  [\titlerule]
+
+\titlespacing{\section}{0pt}{12pt}{6pt}
+
+% Subsection formatting (for job titles)
+\titleformat{\subsection}
+  {\normalsize\bfseries}
+  {}
+  {0em}
+  {}
+
+\titlespacing{\subsection}{0pt}{6pt}{2pt}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+% Define date column width
+\newlength{\datewidth}
+\setlength{\datewidth}{3.5cm}
